@@ -103,3 +103,10 @@ else:
         st.write(f"{prozent:.1f} % Übereinstimmung")
     st.button("Quiz erneut starten", on_click=quiz_neustarten, use_container_width=True)
 
+BILD_1_BANNER  = BASIS_URL + "banner.jpg"
+BILD_2_CROWD   = BASIS_URL + "crowd.jpg"
+BILD_3_TEXT    = BASIS_URL + "intro_text.jpg"
+BILD_4_HINWEIS = BASIS_URL + "brief_hinweis.jpg"
+BILD_5_ZU      = BASIS_URL + "brief_zu.jpg"
+BILD_6_OFFEN   = BASIS_URL + "brief_offen.jpg"
+BILD_7_START   = BASIS_URL + "start_seite.jpg"
