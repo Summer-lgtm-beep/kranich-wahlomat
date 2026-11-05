@@ -8,7 +8,7 @@ st.set_page_config(
 PARTEIEN = ["Die Grünen", "Die Linke", "SPD", "FDP", "CDU", "AfD"]
 NAMEN = {"Die Grünen": "Grünen-Kranich", "Die Linke": "Linken-Kranich", "SPD": "SPD-Kranich", "FDP": "FDP-Kranich", "CDU": "CDU-Kranich", "AfD": "AfD-Kranich"}
 THESEN = [{"text": "Die Busse und Bahnen der KVG Salzgitter sollten für alle Schülerinnen und Schüler komplett kostenlos sein.", "positionen": [1, 1, 1, -1, -1, 0]}, {"text": "Salzgitter sollte mehr Geld in freies WLAN an Schulen und öffentlichen Plätzen investieren, statt zuerst Schulgebäude zu sanieren.", "positionen": [1, -1, -1, 1, -1, 1]}, {"text": "An Schulen sollte es ein generelles Handyverbot auf dem gesamten Gelände geben, auch in den Pausen.", "positionen": [-1, -1, 0, -1, 1, 1]}, {"text": "Die Stadt sollte mehr Treffpunkte für Jugendliche schaffen, auch wenn dafür weniger Geld für Straßen zur Verfügung steht.", "positionen": [1, 1, 1, 0, -1, -1]}, {"text": "Das Jugendparlament sollte echtes Stimmrecht im Stadtrat erhalten.", "positionen": [1, 1, 1, 1, -1, -1]}, {"text": "Grillen und laute Musik sollten am Salzgittersee und in Parks stärker eingeschränkt werden.", "positionen": [0, -1, -1, -1, 1, 1]}, {"text": "Die Stadt sollte Jugendpartys, Festivals oder eine Disco für Jugendliche finanziell unterstützen.", "positionen": [1, 1, 1, 0, 0, -1]}, {"text": "An Schulkiosken und in Mensen sollte ausschließlich gesundes oder vegetarisches Essen verkauft werden dürfen.", "positionen": [1, 1, 0, -1, -1, -1]}, {"text": "An Kriminalitätsschwerpunkten sollte es mehr Kameras und Videoüberwachung geben.", "positionen": [-1, -1, 1, 1, 1, 1]}, {"text": "Salzgitter sollte mehr Fahrradstraßen bauen, auf denen Autos eingeschränkt sind.", "positionen": [1, 1, 1, -1, -1, -1]}, {"text": "Die Stadt sollte Sportvereine so unterstützen, dass Kinder und Jugendliche kostenlos Mitglied werden können.", "positionen": [1, 1, 1, 0, 0, -1]}, {"text": "Schulen sollten im Unterricht mehr über Klimaschutz und umweltfreundliches Leben behandeln.", "positionen": [1, 1, 1, -1, -1, -1]}]
-ANTWORTEN = {"Ich stimme zu": 1, "Neutral": 0, "Ich lehne ab": -1}
+ANTWORTEN = {"Ich stimme zu": 1, "keine Angabe": 0, "Ich lehne ab": -1}
 
 if "intro_schritt" not in st.session_state: st.session_state.intro_schritt = 0
 if "frage" not in st.session_state: st.session_state.frage = 0
@@ -32,25 +32,18 @@ def quiz_neustarten():
     st.session_state.fertig = False
     st.session_state.intro_schritt = 0
 
-# ======================================================================
-# DIE ABSOLUT SICHEREN BILD-DIREKTPFADE (Probiert jetzt zuerst .jpeg aus!)
-# ======================================================================
+
 def lade_bild_sicher(dateiname_ohne_endung):
-    # Wir probieren alle Schreibweisen nacheinander aus
     endungen = [".jpeg", ".JPEG", ".jpg", ".JPG", ".png", ".PNG"]
     for endung in endungen:
         try:
             st.image(f"{dateiname_ohne_endung}{endung}", use_container_width=True)
-            return  # Bild gefunden -> Funktion beenden!
+            return  
         except Exception:
-            continue  # Nächste Endung probieren
+            continue  
             
-    # Falls überhaupt kein Bild im Ordner liegt:
     st.warning(f"Bild '{dateiname_ohne_endung}' fehlt im GitHub-Ordner.")
 
-# ==========================================
-# INTERAKTIVES INTRO
-# ==========================================
 if st.session_state.intro_schritt == 0:
     lade_bild_sicher("banner")
     lade_bild_sicher_crowd = lade_bild_sicher("crowd")
@@ -83,9 +76,6 @@ elif st.session_state.intro_schritt == 5:
         st.session_state.intro_schritt = 6
         st.rerun()
 
-# ==========================================
-# DAS QUIZ
-# ==========================================
 elif st.session_state.intro_schritt == 6 and not st.session_state.fertig:
     index = st.session_state.frage
     these = THESEN[index]
