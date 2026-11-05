@@ -1,5 +1,4 @@
 import streamlit as st
-import requests
 
 st.set_page_config(
     page_title="Was wählen Kraniche?",
@@ -33,58 +32,50 @@ def quiz_neustarten():
     st.session_state.fertig = False
     st.session_state.intro_schritt = 0
 
-# ----------------------------------------------------------------------
-# DIESE FUNKTION PRÜFT JEDE ENDUNG DIREKT AUF GITHUB AB
-# ----------------------------------------------------------------------
-def zeige_online_bild(basis_name):
-    GITHUB_USER = "Summer-lgtm-beep"
-    BASIS_URL = f"https://githubusercontent.com{GITHUB_USER}/kranich-wahlomat/master/"
-    
-    # Alle denkbaren Endungen, die GitHub angelegt haben könnte
-    endungen = [".jpg", ".JPG", ".png", ".PNG", ".jpeg", ".JPEG"]
-    
-    for endung in endungen:
-        test_url = BASIS_URL + basis_name + endung
-        # Wir fragen kurz das Internet, ob unter dieser Adresse ein Bild liegt
-        antwort = requests.head(test_url)
-        if antwort.status_code == 200:
-            st.image(test_url, use_container_width=True)
-            return
-            
-    # Falls gar nichts geht, machen wir eine kleine, hübsche Textwarnung statt Absturz
-    st.warning(f"Bild '{basis_name}' wurde auf GitHub nicht gefunden. Bitte lade die Datei dort hoch.")
+# ======================================================================
+# DIE ABSOLUT SICHEREN BILD-DIREKTPFADE (Probiert JPG und PNG aus)
+# ======================================================================
+def lade_bild_sicher(dateiname_ohne_endung):
+    try:
+        # Streamlit schaut direkt in deinem GitHub-Ordner nach der Datei
+        st.image(f"{dateiname_ohne_endung}.jpg", use_container_width=True)
+    except Exception:
+        try:
+            st.image(f"{dateiname_ohne_endung}.png", use_container_width=True)
+        except Exception:
+            st.warning(f"Bild '{dateiname_ohne_endung}' fehlt im GitHub-Ordner.")
 
 # ==========================================
-# INTERAKTIVES INTRO (NUTZT DIE NEUE FUNKTION)
+# INTERAKTIVES INTRO
 # ==========================================
 if st.session_state.intro_schritt == 0:
-    zeige_online_bild("banner")
-    zeige_online_bild("crowd")
+    lade_bild_sicher("banner")
+    lade_bild_sicher("crowd")
     if st.button("Weiter", use_container_width=True):
         st.session_state.intro_schritt = 1
         st.rerun()
 elif st.session_state.intro_schritt == 1:
-    zeige_online_bild("intro_text")
+    lade_bild_sicher("intro_text")
     if st.button("Weiter", use_container_width=True):
         st.session_state.intro_schritt = 2
         st.rerun()
 elif st.session_state.intro_schritt == 2:
-    zeige_online_bild("brief_hinweis")
+    lade_bild_sicher("brief_hinweis")
     if st.button("Postkasten öffnen", use_container_width=True):
         st.session_state.intro_schritt = 3
         st.rerun()
 elif st.session_state.intro_schritt == 3:
-    zeige_online_bild("brief_zu")
+    lade_bild_sicher("brief_zu")
     if st.button("Siegel brechen & öffnen", use_container_width=True):
         st.session_state.intro_schritt = 4
         st.rerun()
 elif st.session_state.intro_schritt == 4:
-    zeige_online_bild("brief_offen")
+    lade_bild_sicher("brief_offen")
     if st.button("Brief schließen & Weiter", use_container_width=True):
         st.session_state.intro_schritt = 5
         st.rerun()
 elif st.session_state.intro_schritt == 5:
-    zeige_online_bild("start_seite")
+    lade_bild_sicher("start_seite")
     if st.button("JETZT QUIZ STARTEN", use_container_width=True):
         st.session_state.intro_schritt = 6
         st.rerun()
