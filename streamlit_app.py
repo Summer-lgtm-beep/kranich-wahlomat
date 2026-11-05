@@ -5,76 +5,10 @@ st.set_page_config(
     layout="centered"
 )
 
-PARTEIEN = [
-    "Die Grünen", "Die Linke", "SPD",
-    "FDP", "CDU", "AfD"
-]
-
-NAMEN = {
-    "Die Grünen": "Grünen-Kranich",
-    "Die Linke": "Linken-Kranich",
-    "SPD": "SPD-Kranich",
-    "FDP": "FDP-Kranich",
-    "CDU": "CDU-Kranich",
-    "AfD": "AfD-Kranich"
-}
-
-THESEN = [
-    {
-        "text": "Die Busse und Bahnen der KVG Salzgitter sollten für alle Schülerinnen und Schüler komplett kostenlos sein.",
-        "positionen": [1, 1, 1, -1, -1, 0]
-    },
-    {
-        "text": "Salzgitter sollte mehr Geld in freies WLAN an Schulen und öffentlichen Plätzen investieren, statt zuerst Schulgebäude zu sanieren.",
-        "positionen": [1, -1, -1, 1, -1, 1]
-    },
-    {
-        "text": "An Schulen sollte es ein generelles Handyverbot auf dem gesamten Gelände geben, auch in den Pausen.",
-        "positionen": [-1, -1, 0, -1, 1, 1]
-    },
-    {
-        "text": "Die Stadt sollte mehr Treffpunkte für Jugendliche schaffen, auch wenn dafür weniger Geld für Straßen zur Verfügung steht.",
-        "positionen": [1, 1, 1, 0, -1, -1]
-    },
-    {
-        "text": "Das Jugendparlament sollte echtes Stimmrecht im Stadtrat erhalten.",
-        "positionen": [1, 1, 1, 1, -1, -1]
-    },
-    {
-        "text": "Grillen und laute Musik sollten am Salzgittersee und in Parks stärker eingeschränkt werden.",
-        "positionen": [0, -1, -1, -1, 1, 1]
-    },
-    {
-        "text": "Die Stadt sollte Jugendpartys, Festivals oder eine Disco für Jugendliche finanziell unterstützen.",
-        "positionen": [1, 1, 1, 0, 0, -1]
-    },
-    {
-        "text": "An Schulkiosken und in Mensen sollte ausschließlich gesundes oder vegetarisches Essen verkauft werden dürfen.",
-        "positionen": [1, 1, 0, -1, -1, -1]
-    },
-    {
-        "text": "An Kriminalitätsschwerpunkten sollte es mehr Kameras und Videoüberwachung geben.",
-        "positionen": [-1, -1, 1, 1, 1, 1]
-    },
-    {
-        "text": "Salzgitter sollte mehr Fahrradstraßen bauen, auf denen Autos eingeschränkt sind.",
-        "positionen": [1, 1, 1, -1, -1, -1]
-    },
-    {
-        "text": "Die Stadt sollte Sportvereine so unterstützen, dass Kinder und Jugendliche kostenlos Mitglied werden können.",
-        "positionen": [1, 1, 1, 0, 0, -1]
-    },
-    {
-        "text": "Schulen sollten im Unterricht mehr über Klimaschutz und umweltfreundliches Leben behandeln.",
-        "positionen": [1, 1, 1, -1, -1, -1]
-    }
-]
-
-ANTWORTEN = {
-    "Ich stimme zu": 1,
-    "Neutral": 0,
-    "Ich lehne ab": -1
-}
+PARTEIEN = ["Die Grünen", "Die Linke", "SPD", "FDP", "CDU", "AfD"]
+NAMEN = {"Die Grünen": "Grünen-Kranich", "Die Linke": "Linken-Kranich", "SPD": "SPD-Kranich", "FDP": "FDP-Kranich", "CDU": "CDU-Kranich", "AfD": "AfD-Kranich"}
+THESEN = [{"text": "Die Busse und Bahnen der KVG Salzgitter sollten für alle Schülerinnen und Schüler komplett kostenlos sein.", "positionen": [1, 1, 1, -1, -1, 0]}, {"text": "Salzgitter sollte mehr Geld in freies WLAN an Schulen und öffentlichen Plätzen investieren, statt zuerst Schulgebäude zu sanieren.", "positionen": [1, -1, -1, 1, -1, 1]}, {"text": "An Schulen sollte es ein generelles Handyverbot auf dem gesamten Gelände geben, auch in den Pausen.", "positionen": [-1, -1, 0, -1, 1, 1]}, {"text": "Die Stadt sollte mehr Treffpunkte für Jugendliche schaffen, auch wenn dafür weniger Geld für Straßen zur Verfügung steht.", "positionen": [1, 1, 1, 0, -1, -1]}, {"text": "Das Jugendparlament sollte echtes Stimmrecht im Stadtrat erhalten.", "positionen": [1, 1, 1, 1, -1, -1]}, {"text": "Grillen und laute Musik sollten am Salzgittersee und in Parks stärker eingeschränkt werden.", "positionen": [0, -1, -1, -1, 1, 1]}, {"text": "Die Stadt sollte Jugendpartys, Festivals oder eine Disco für Jugendliche finanziell unterstützen.", "positionen": [1, 1, 1, 0, 0, -1]}, {"text": "An Schulkiosken und in Mensen sollte ausschließlich gesundes oder vegetarisches Essen verkauft werden dürfen.", "positionen": [1, 1, 0, -1, -1, -1]}, {"text": "An Kriminalitätsschwerpunkten sollte es mehr Kameras und Videoüberwachung geben.", "positionen": [-1, -1, 1, 1, 1, 1]}, {"text": "Salzgitter sollte mehr Fahrradstraßen bauen, auf denen Autos eingeschränkt sind.", "positionen": [1, 1, 1, -1, -1, -1]}, {"text": "Die Stadt sollte Sportvereine so unterstützen, dass Kinder und Jugendliche kostenlos Mitglied werden können.", "positionen": [1, 1, 1, 0, 0, -1]}, {"text": "Schulen sollten im Unterricht mehr über Klimaschutz und umweltfreundliches Leben behandeln.", "positionen": [1, 1, 1, -1, -1, -1]}]
+ANTWORTEN = {"Ich stimme zu": 1, "Neutral": 0, "Ich lehne ab": -1}
 
 if "intro_schritt" not in st.session_state: st.session_state.intro_schritt = 0
 if "frage" not in st.session_state: st.session_state.frage = 0
@@ -98,13 +32,16 @@ def quiz_neustarten():
     st.session_state.fertig = False
     st.session_state.intro_schritt = 0
 
-BILD_1_BANNER  = "https://ibb.co"
-BILD_2_CROWD   = "https://ibb.co"
-BILD_3_TEXT    = "https://ibb.co"
-BILD_4_HINWEIS = "https://ibb.co"
-BILD_5_ZU      = "https://ibb.co"
-BILD_6_OFFEN   = "https://ibb.co"
-BILD_7_START   = "https://ibb.co"
+GITHUB_USER = "Summer-lgtm-beep"
+BASIS_URL = f"https://githubusercontent.com{GITHUB_USER}/kranich-wahlomat/master/"
+
+BILD_1_BANNER  = BASIS_URL + "banner.png"
+BILD_2_CROWD   = BASIS_URL + "crowd.png"
+BILD_3_TEXT    = BASIS_URL + "intro_text.png"
+BILD_4_HINWEIS = BASIS_URL + "brief_hinweis.png"
+BILD_5_ZU      = BASIS_URL + "brief_zu.png"
+BILD_6_OFFEN   = BASIS_URL + "brief_offen.png"
+BILD_7_START   = BASIS_URL + "start_seite.png"
 
 if st.session_state.intro_schritt == 0:
     st.image(BILD_1_BANNER, use_container_width=True)
@@ -165,3 +102,4 @@ else:
         st.progress(int(round(prozent)))
         st.write(f"{prozent:.1f} % Übereinstimmung")
     st.button("Quiz erneut starten", on_click=quiz_neustarten, use_container_width=True)
+
