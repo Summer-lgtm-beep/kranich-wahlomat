@@ -33,24 +33,27 @@ def quiz_neustarten():
     st.session_state.intro_schritt = 0
 
 # ======================================================================
-# DIE ABSOLUT SICHEREN BILD-DIREKTPFADE (Probiert JPG und PNG aus)
+# DIE ABSOLUT SICHEREN BILD-DIREKTPFADE (Probiert jetzt zuerst .jpeg aus!)
 # ======================================================================
 def lade_bild_sicher(dateiname_ohne_endung):
-    try:
-        # Streamlit schaut direkt in deinem GitHub-Ordner nach der Datei
-        st.image(f"{dateiname_ohne_endung}.jpg", use_container_width=True)
-    except Exception:
+    # Wir probieren alle Schreibweisen nacheinander aus
+    endungen = [".jpeg", ".JPEG", ".jpg", ".JPG", ".png", ".PNG"]
+    for endung in endungen:
         try:
-            st.image(f"{dateiname_ohne_endung}.png", use_container_width=True)
+            st.image(f"{dateiname_ohne_endung}{endung}", use_container_width=True)
+            return  # Bild gefunden -> Funktion beenden!
         except Exception:
-            st.warning(f"Bild '{dateiname_ohne_endung}' fehlt im GitHub-Ordner.")
+            continue  # Nächste Endung probieren
+            
+    # Falls überhaupt kein Bild im Ordner liegt:
+    st.warning(f"Bild '{dateiname_ohne_endung}' fehlt im GitHub-Ordner.")
 
 # ==========================================
 # INTERAKTIVES INTRO
 # ==========================================
 if st.session_state.intro_schritt == 0:
     lade_bild_sicher("banner")
-    lade_bild_sicher("crowd")
+    lade_bild_sicher_crowd = lade_bild_sicher("crowd")
     if st.button("Weiter", use_container_width=True):
         st.session_state.intro_schritt = 1
         st.rerun()
