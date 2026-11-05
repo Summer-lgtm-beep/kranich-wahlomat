@@ -33,7 +33,7 @@ def quiz_neustarten():
     st.session_state.intro_schritt = 0
 
 GITHUB_USER = "Summer-lgtm-beep"
-# SO MUSS DIE ZEILE EXAKT AUSSEHEN (mit raw. am Anfang und / nach .com):
+
 BASIS_URL = f"https://githubusercontent.com{GITHUB_USER}/kranich-wahlomat/master/"
 
 BILD_1_BANNER  = BASIS_URL + "banner.JPG"
