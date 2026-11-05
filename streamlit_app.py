@@ -36,13 +36,13 @@ GITHUB_USER = "Summer-lgtm-beep"
 # SO MUSS DIE ZEILE EXAKT AUSSEHEN (mit raw. am Anfang und / nach .com):
 BASIS_URL = f"https://githubusercontent.com{GITHUB_USER}/kranich-wahlomat/master/"
 
-BILD_1_BANNER  = BASIS_URL + "banner.jpg"
-BILD_2_CROWD   = BASIS_URL + "crowd.jpg"
-BILD_3_TEXT    = BASIS_URL + "intro_text.jpg"
-BILD_4_HINWEIS = BASIS_URL + "brief_hinweis.jpg"
-BILD_5_ZU      = BASIS_URL + "brief_zu.jpg"
-BILD_6_OFFEN   = BASIS_URL + "brief_offen.jpg"
-BILD_7_START   = BASIS_URL + "start_seite.jpg"
+BILD_1_BANNER  = BASIS_URL + "banner.JPG"
+BILD_2_CROWD   = BASIS_URL + "crowd.JPG"
+BILD_3_TEXT    = BASIS_URL + "intro_text.JPG"
+BILD_4_HINWEIS = BASIS_URL + "brief_hinweis.JPG"
+BILD_5_ZU      = BASIS_URL + "brief_zu.JPG"
+BILD_6_OFFEN   = BASIS_URL + "brief_offen.JPG"
+BILD_7_START   = BASIS_URL + "start_seite.JPG"
 
 
 
