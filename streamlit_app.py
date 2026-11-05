@@ -34,7 +34,7 @@ def quiz_neustarten():
 
 GITHUB_USER = "Summer-lgtm-beep"
 
-BASIS_URL = f"https://raw.githubusercontent.com{GITHUB_USER}/kranich-wahlomat/master/"
+BASIS_URL = f"https://raw.githubusercontent.com/{GITHUB_USER}/kranich-wahlomat/master/"
 
 BILD_1_BANNER  = BASIS_URL + "banner.JPG"
 BILD_2_CROWD   = BASIS_URL + "crowd.JPG"
