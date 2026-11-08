@@ -830,5 +830,3 @@ else:
         with st.popover("Ergebnis teilen / Text kopieren", use_container_width=True):
             st.write("Kopiere dein Ergebnis einfach für WhatsApp, Instagram oder Discord:")
             st.code(zusammenfassung, language="text")
-
-
