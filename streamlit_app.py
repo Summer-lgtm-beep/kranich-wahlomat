@@ -163,7 +163,6 @@ st.markdown("""
 </div>
 """, unsafe_allow_html=True)
 
-# ----------------- INTRO -----------------
 if st.session_state.intro < 6 and not st.session_state.fertig:
     s = st.session_state.intro
     titel = ["1. Willkommen", "2. Postkasten", "3. Hinweis", "4. Brief erhalten", "5. Brief geöffnet", "6. Startseite"]
@@ -202,7 +201,6 @@ if st.session_state.intro < 6 and not st.session_state.fertig:
 
     zeige_footer()
 
-# ----------------- QUIZ -----------------
 elif st.session_state.intro == 6 and not st.session_state.fertig:
     q = st.session_state.frage
     these = THESEN[q]
@@ -214,7 +212,6 @@ elif st.session_state.intro == 6 and not st.session_state.fertig:
     c2.markdown(f"<div style='text-align:right; color:#64748b; font-size:0.85rem;'>Beantwortet: {len(st.session_state.antworten)}/{len(THESEN)}</div>", unsafe_allow_html=True)
     st.progress((q + 1) / len(THESEN))
 
-    # Navigationsleiste Thesen 1-12
     n_cols = st.columns(12)
     for i in range(12):
         with n_cols[i]:
@@ -223,14 +220,12 @@ elif st.session_state.intro == 6 and not st.session_state.fertig:
                 st.session_state.frage = i
                 st.rerun()
 
-    # Thesenkarte mit fester Höhe (Buttons springen nicht)
     st.markdown(f"""
     <div class="these-card">
         <div class="these-title">{these["text"]}</div>
     </div>
     """, unsafe_allow_html=True)
 
-    # Zentrierter Button für doppelte Gewichtung
     _, c_gew, _ = st.columns([1, 1.4, 1])
     with c_gew:
         new_gew = st.toggle("Doppelt werten (2x)", value=is_gew, key=f"toggle_w_{q}")
@@ -243,7 +238,7 @@ elif st.session_state.intro == 6 and not st.session_state.fertig:
     
     def set_antwort(wert):
         st.session_state.antworten[q] = wert
-        # Prüfe, ob noch Thesen offen sind
+  
         offen = [i for i in range(len(THESEN)) if i not in st.session_state.antworten]
         if offen:
             naechste = [i for i in offen if i > q]
@@ -264,7 +259,7 @@ elif st.session_state.intro == 6 and not st.session_state.fertig:
 
     zeige_footer()
 
-# ----------------- ERGEBNIS -----------------
+
 else:
     results = berechne_score()
     top = results[0]
