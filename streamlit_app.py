@@ -137,26 +137,26 @@ def zeige_footer():
         Kranich-Wahl-O-Mat (Projekt zur politischen Bildung am Kranich-Gymnasium Salzgitter).
 
      
+        **Herkunft und Grundlage der Thesen:**  
+        Die 12 Thesen basieren auf den Kommunalwahlprogrammen der im Rat der Stadt Salzgitter vertretenen Parteien ([Bündnis 90/Die Grünen](https://gruene-salzgitter.de), [Die Linke](https://die-linke-salzgitter.de), [SPD](https://spd-salzgitter.de), FDP, [CDU](https://cdu-salzgitter.de), AfD), aktuellen Anträgen der Ratsfraktionen sowie lokalen jugend- und schulspezifischen Debatten:
 
-**Herkunft und Grundlage der Thesen:**  
-        Die 12 Thesen basieren auf den Kommunalwahlprogrammen der im Rat der Stadt Salzgitter vertretenen Parteien (Bündnis 90/Die Grünen, Die Linke, SPD, FDP, CDU, AfD), aktuellen Anträgen der Ratsfraktionen sowie lokalen jugend- und schulspezifischen Debatten:
-
-        * **These 1 (Schülerbeförderung KVG):** Anträge zur kostenfreien Schülerbeförderung und Beschlüsse der Verbandsversammlung des Regionalverbands Großraum Braunschweig (RGB) sowie des Rates der Stadt Salzgitter.
-        * **These 2 (WLAN vs. Schulsanierung):** Investitionsplanungen der Stadt Salzgitter für Schulinfrastruktur und Umsetzung des DigitalPakt Schule Niedersachsen.
-        * **These 3 (Handyverbot an Schulen):** Niedersächsisches Schulgesetz (§ 31 Schulordnung) und Beratungen im Schulausschuss der Stadt Salzgitter.
-        * **These 4 (Jugendtreffpunkte vs. Straßenbau):** Haushaltsberatungen des Fachbereichs Kinder, Jugend und Familie der Stadt Salzgitter (Ausstattung kommunaler Kinder- und Jugendtreffs vs. Infrastrukturhaushalt).
-        * **These 5 (Jugendparlament):** Satzung der Stadt Salzgitter über das Jugendparlament sowie Anträge zur Erweiterung von Beteiligungs- und Stimmrechten Jugendlicher gemäß § 36 Niedersächsisches Kommunalverfassungsgesetz (NKomVG).
-        * **These 6 (Salzgittersee & Parks):** Verordnung zur Aufrechterhaltung der öffentlichen Sicherheit und Ordnung für das Naherholungsgebiet Salzgittersee der Stadt Salzgitter.
-        * **These 7 (Jugendkultur & Festivals):** Förderrichtlinien des Fachbereichs Kultur der Stadt Salzgitter zur Unterstützung von Jugendkulturveranstaltungen.
-        * **These 8 (Schulverpflegung & Mensen):** Beschlüsse des Schulausschusses zur Mensaverpflegung nach DGE-Qualitätsstandards an Salzgitteraner Ganztagsschulen.
-        * **These 9 (Videoüberwachung):** Anträge und Debatten im Rat der Stadt Salzgitter und im Ausschuss für Feuerwehr und öffentliche Ordnung bezüglich Sicherheitsmaßnahmen an Kriminalitätsschwerpunkten.
-        * **These 10 (Fahrradstraßen):** Radverkehrskonzept der Stadt Salzgitter und Beschlüsse zur Förderung des umweltfreundlichen Rad- und Nahverkehrs.
-        * **These 11 (Kostenlose Sportvereine für Kinder):** Sportförderrichtlinien der Stadt Salzgitter in Abstimmung mit dem Kreissportbund Salzgitter e.V.
-        * **These 12 (Klimaschutz im Unterricht):** Rahmenrichtlinien und Kerncurricula des Niedersächsischen Kultusministeriums zur Bildung für nachhaltige Entwicklung (BNE).
+        * **These 1 (Schülerbeförderung KVG):** Anträge zur kostenfreien Schülerbeförderung und Beschlüsse der Verbandsversammlung des Regionalverbands Großraum Braunschweig (RGB) sowie des Rates der Stadt Salzgitter ([Die Linke, S. 14](https://die-linke-salzgitter.de); [Grüne, S. 7](https://gruene-salzgitter.de); [SPD, S. 8](https://spd-salzgitter.de); [CDU, S. 7, 9–10](https://cdu-salzgitter.de)).
+        * **These 2 (WLAN vs. Schulsanierung):** Investitionsplanungen der Stadt Salzgitter für Schulinfrastruktur und Umsetzung des DigitalPakt Schule Niedersachsen ([Die Linke, S. 11](https://die-linke-salzgitter.de); [Grüne, S. 13–14](https://gruene-salzgitter.de); [SPD 2021, S. 9](https://spd-salzgitter.de); [CDU, S. 7](https://cdu-salzgitter.de)).
+        * **These 3 (Handyverbot an Schulen):** Niedersächsisches Schulgesetz (§ 31 Schulordnung) und Beratungen im Schulausschuss der Stadt Salzgitter ([Die Linke, S. 11](https://die-linke-salzgitter.de); Positionspapier AfD-Bundestagsfraktion).
+        * **These 4 (Jugendtreffpunkte vs. Straßenbau):** Haushaltsberatungen des Fachbereichs Kinder, Jugend und Familie der Stadt Salzgitter – Ausstattung kommunaler Kinder- und Jugendtreffs vs. Infrastrukturhaushalt ([Die Linke, S. 7](https://die-linke-salzgitter.de); [Grüne, S. 15](https://gruene-salzgitter.de)).
+        * **These 5 (Jugendparlament):** Satzung der Stadt Salzgitter über das Jugendparlament sowie Anträge zur Erweiterung von Beteiligungs- und Stimmrechten Jugendlicher gemäß § 36 Niedersächsisches Kommunalverfassungsgesetz (NKomVG) ([Die Linke, S. 7](https://die-linke-salzgitter.de); [Grüne, S. 15](https://gruene-salzgitter.de); [SPD 2021, S. 5](https://spd-salzgitter.de)).
+        * **These 6 (Salzgittersee & Parks):** Verordnung zur Aufrechterhaltung der öffentlichen Sicherheit und Ordnung für das Naherholungsgebiet Salzgittersee der Stadt Salzgitter ([SPD 2021, S. 8](https://spd-salzgitter.de)).
+        * **These 7 (Jugendkultur & Festivals):** Förderrichtlinien des Fachbereichs Kultur der Stadt Salzgitter zur Unterstützung von Jugendkulturveranstaltungen ([Die Linke, S. 7](https://die-linke-salzgitter.de); [Grüne, S. 15](https://gruene-salzgitter.de)).
+        * **These 8 (Schulverpflegung & Mensen):** Beschlüsse des Schulausschusses zur Mensaverpflegung nach DGE-Qualitätsstandards an Salzgitteraner Ganztagsschulen ([Grüne, S. 14](https://gruene-salzgitter.de); Landesprogramm Die Linke Niedersachsen, Nr. 2.2).
+        * **These 9 (Videoüberwachung):** Anträge und Debatten im Rat der Stadt Salzgitter und im Ausschuss für Feuerwehr und öffentliche Ordnung bezüglich Sicherheitsmaßnahmen an Kriminalitätsschwerpunkten ([CDU, S. 10](https://cdu-salzgitter.de); SPD/Stadt Salzgitter Bahnhofs-Videoüberwachung; Landtagswahlprogramm FDP Niedersachsen).
+        * **These 10 (Fahrradstraßen):** Radverkehrskonzept der Stadt Salzgitter und Beschlüsse zur Förderung des umweltfreundlichen Rad- und Nahverkehrs ([Die Linke, S. 15](https://die-linke-salzgitter.de); [Grüne, S. 7](https://gruene-salzgitter.de); [SPD, S. 8](https://spd-salzgitter.de); [CDU, S. 9](https://cdu-salzgitter.de)).
+        * **These 11 (Kostenlose Sportvereine für Kinder):** Sportförderrichtlinien der Stadt Salzgitter in Abstimmung mit dem Kreissportbund Salzgitter e.V. ([Grüne, S. 15](https://gruene-salzgitter.de); [SPD, S. 15](https://spd-salzgitter.de); Landesprogramm Die Linke Niedersachsen, Nr. 7.6).
+        * **These 12 (Klimaschutz im Unterricht):** Rahmenrichtlinien und Kerncurricula des Niedersächsischen Kultusministeriums zur Bildung für nachhaltige Entwicklung (BNE) ([Grüne, S. 13–14](https://gruene-salzgitter.de); Landesprogramm Die Linke Niedersachsen).
 
         **Hinweis:**  
         Die Positionen der Parteien spiegeln die Parteiprogramme und das Abstimmungsverhalten im Rat der Stadt Salzgitter wider. Das Ergebnis dient als Orientierungshilfe zur politischen Meinungsbildung.
         """)
+
 
 
 st.markdown("""
