@@ -138,45 +138,25 @@ def zeige_footer():
 
      
 
-Für die Einordnung der sechs Ratsfraktionen (Die Linke, Bündnis 90/Die Grünen, SPD, FDP, CDU und AfD) wurden vor allem die aktuellen **Kommunalwahlprogramme zur Wahl 2026 in Salzgitter** ausgewertet. Wo es auf kommunaler Ebene keine eigene Aussage gab, wurden Landes- und Bundesprogramme sowie bekannte Positionen aus dem Stadtrat herangezogen.
+**Herkunft und Grundlage der Thesen:**  
+        Die 12 Thesen basieren auf den Kommunalwahlprogrammen der im Rat der Stadt Salzgitter vertretenen Parteien (Bündnis 90/Die Grünen, Die Linke, SPD, FDP, CDU, AfD), aktuellen Anträgen der Ratsfraktionen sowie lokalen jugend- und schulspezifischen Debatten:
 
-**Die wichtigsten Grundlagendokumente:**
-* [Kommunalwahlprogramm 2026 – Die Linke Salzgitter (PDF)](https://die-linke-salzgitter.de/documents/Kommunalwahl_Programm-2026.pdf)
-* [Kommunalwahlprogramm 2026 „Mach's Grün“ – Grüne Salzgitter (PDF)](https://gruene-salzgitter.de/wp-content/uploads/sites/102/2026/07/MACHS-GRUeN.pdf)
-* [Kommunalwahlprogramm 2026 (Langfassung) – SPD Salzgitter (PDF)](https://www.spd-salzgitter.de/wp-content/uploads/sites/884/2026/07/SPD_Wahlprogramm_Langfassung.pdf) sowie [SPD-Programm 2021–2026 (PDF)](https://www.spd-salzgitter.de/wp-content/uploads/sites/884/2021/08/01_Kommunalwahlprogramm_SPD_Salzgitter_fertig.pdf)
-* [Kommunalwahlprogramm 2026 „Stark für Salzgitter“ – CDU Salzgitter (PDF)](https://www.cdu-salzgitter.de/image/kopfgrafiken/CDU%20Wahlprogramm%202026.pdf)
+        * **These 1 (Schülerbeförderung KVG):** Anträge zur kostenfreien Schülerbeförderung und Beschlüsse der Verbandsversammlung des Regionalverbands Großraum Braunschweig (RGB) sowie des Rates der Stadt Salzgitter.
+        * **These 2 (WLAN vs. Schulsanierung):** Investitionsplanungen der Stadt Salzgitter für Schulinfrastruktur und Umsetzung des DigitalPakt Schule Niedersachsen.
+        * **These 3 (Handyverbot an Schulen):** Niedersächsisches Schulgesetz (§ 31 Schulordnung) und Beratungen im Schulausschuss der Stadt Salzgitter.
+        * **These 4 (Jugendtreffpunkte vs. Straßenbau):** Haushaltsberatungen des Fachbereichs Kinder, Jugend und Familie der Stadt Salzgitter (Ausstattung kommunaler Kinder- und Jugendtreffs vs. Infrastrukturhaushalt).
+        * **These 5 (Jugendparlament):** Satzung der Stadt Salzgitter über das Jugendparlament sowie Anträge zur Erweiterung von Beteiligungs- und Stimmrechten Jugendlicher gemäß § 36 Niedersächsisches Kommunalverfassungsgesetz (NKomVG).
+        * **These 6 (Salzgittersee & Parks):** Verordnung zur Aufrechterhaltung der öffentlichen Sicherheit und Ordnung für das Naherholungsgebiet Salzgittersee der Stadt Salzgitter.
+        * **These 7 (Jugendkultur & Festivals):** Förderrichtlinien des Fachbereichs Kultur der Stadt Salzgitter zur Unterstützung von Jugendkulturveranstaltungen.
+        * **These 8 (Schulverpflegung & Mensen):** Beschlüsse des Schulausschusses zur Mensaverpflegung nach DGE-Qualitätsstandards an Salzgitteraner Ganztagsschulen.
+        * **These 9 (Videoüberwachung):** Anträge und Debatten im Rat der Stadt Salzgitter und im Ausschuss für Feuerwehr und öffentliche Ordnung bezüglich Sicherheitsmaßnahmen an Kriminalitätsschwerpunkten.
+        * **These 10 (Fahrradstraßen):** Radverkehrskonzept der Stadt Salzgitter und Beschlüsse zur Förderung des umweltfreundlichen Rad- und Nahverkehrs.
+        * **These 11 (Kostenlose Sportvereine für Kinder):** Sportförderrichtlinien der Stadt Salzgitter in Abstimmung mit dem Kreissportbund Salzgitter e.V.
+        * **These 12 (Klimaschutz im Unterricht):** Rahmenrichtlinien und Kerncurricula des Niedersächsischen Kultusministeriums zur Bildung für nachhaltige Entwicklung (BNE).
 
----
-
-**Belege zu den einzelnen Thesen:**
-
-1. **Kostenlose Busse und Bahnen (KVG):**  
-   Linke ([S. 14](https://die-linke-salzgitter.de/documents/Kommunalwahl_Programm-2026.pdf)), Grüne ([S. 7](https://gruene-salzgitter.de/wp-content/uploads/sites/102/2026/07/MACHS-GRUeN.pdf)) und SPD ([S. 8](https://www.spd-salzgitter.de/wp-content/uploads/sites/884/2026/07/SPD_Wahlprogramm_Langfassung.pdf)) setzen sich für kostenlosen ÖPNV bzw. freie Fahrt für Kinder und Jugendliche ein. Die CDU setzt stattdessen auf ein abgestimmtes Schulbuskonzept bei solider Haushaltslage ([S. 7, 9–10](https://www.cdu-salzgitter.de/image/kopfgrafiken/CDU%20Wahlprogramm%202026.pdf)).
-2. **WLAN vs. Schulsanierung:**  
-   Linke ([S. 11](https://die-linke-salzgitter.de/documents/Kommunalwahl_Programm-2026.pdf)), Grüne ([S. 13–14](https://gruene-salzgitter.de/wp-content/uploads/sites/102/2026/07/MACHS-GRUeN.pdf)) und CDU ([S. 7](https://www.cdu-salzgitter.de/image/kopfgrafiken/CDU%20Wahlprogramm%202026.pdf)) legen den Schwerpunkt klar auf die bauliche Sanierung der Schulgebäude. Die SPD ([S. 14](https://www.spd-salzgitter.de/wp-content/uploads/sites/884/2026/07/SPD_Wahlprogramm_Langfassung.pdf) / [Programm 2021, S. 9](https://www.spd-salzgitter.de/wp-content/uploads/sites/884/2021/08/01_Kommunalwahlprogramm_SPD_Salzgitter_fertig.pdf)) und die FDP (Landesprogramm Niedersachsen, Punkt 6) betonen stärker den Ausbau von kostenfreiem Schul-WLAN.
-3. **Generelles Handyverbot an Schulen:**  
-   Die AfD fordert auf Bundesebene ein generelles Mobiltelefonverbot an Schulen (Positionspapier der AfD-Bundestagsfraktion). Die Linke setzt dagegen auf Medienscouts und digitale Ausstattung ([S. 11–12](https://die-linke-salzgitter.de/documents/Kommunalwahl_Programm-2026.pdf)).
-4. **Mehr Jugendtreffs statt Straßenbau:**  
-   Linke ([S. 7](https://die-linke-salzgitter.de/documents/Kommunalwahl_Programm-2026.pdf)) und Grüne ([S. 15](https://gruene-salzgitter.de/wp-content/uploads/sites/102/2026/07/MACHS-GRUeN.pdf)) fordern eigene, selbstverwaltete Jugendräume und mehr Geld für Jugendzentren. Die SPD unterstützt ebenfalls die Weiterführung und den Ausbau der Jugendarbeit ([Programm 2021, S. 5](https://www.spd-salzgitter.de/wp-content/uploads/sites/884/2021/08/01_Kommunalwahlprogramm_SPD_Salzgitter_fertig.pdf)).
-5. **Echtes Stimmrecht fürs Jugendparlament:**  
-   Linke ([S. 7](https://die-linke-salzgitter.de/documents/Kommunalwahl_Programm-2026.pdf)), Grüne ([S. 15](https://gruene-salzgitter.de/wp-content/uploads/sites/102/2026/07/MACHS-GRUeN.pdf)) und SPD ([Programm 2021, S. 5](https://www.spd-salzgitter.de/wp-content/uploads/sites/884/2021/08/01_Kommunalwahlprogramm_SPD_Salzgitter_fertig.pdf)) wollen das Jugendparlament deutlich stärker an Entscheidungen im Stadtrat und in den Ausschüssen beteiligen.
-6. **Grillen und Musik am Salzgittersee:**  
-   Die SPD spricht sich im Programm gegen pauschale Verbote aus und will stattdessen zusätzliche legale Grillplätze am Salzgittersee schaffen ([S. 11](https://www.spd-salzgitter.de/wp-content/uploads/sites/884/2026/07/SPD_Wahlprogramm_Langfassung.pdf) / [Programm 2021, S. 8](https://www.spd-salzgitter.de/wp-content/uploads/sites/884/2021/08/01_Kommunalwahlprogramm_SPD_Salzgitter_fertig.pdf)).
-7. **Zuschüsse für Jugendpartys und Festivals:**  
-   Linke ([S. 7](https://die-linke-salzgitter.de/documents/Kommunalwahl_Programm-2026.pdf)) und Grüne ([S. 15](https://gruene-salzgitter.de/wp-content/uploads/sites/102/2026/07/MACHS-GRUeN.pdf)) machen sich für mehr Veranstaltungs- und Kulturräume für Jugendliche stark. Auch die SPD unterstützt Kultur- und Jugendveranstaltungen ([Programm 2021, S. 8 & 17](https://www.spd-salzgitter.de/wp-content/uploads/sites/884/2021/08/01_Kommunalwahlprogramm_SPD_Salzgitter_fertig.pdf)).
-8. **Gesundes / vegetarisches Essen in Mensen:**  
-   Die Grünen fordern im Ganztag ein gesundes Mittagessen für alle Schülerinnen und Schüler ([S. 14](https://gruene-salzgitter.de/wp-content/uploads/sites/102/2026/07/MACHS-GRUeN.pdf)), die Linke orientiert sich am Landesprogramm Niedersachsen (Punkt 2.2) für kostenfreie, gesunde Schulverpflegung.
-9. **Mehr Videoüberwachung:**  
-   CDU ([S. 10](https://www.cdu-salzgitter.de/image/kopfgrafiken/CDU%20Wahlprogramm%202026.pdf)), SPD ([S. 11](https://www.spd-salzgitter.de/wp-content/uploads/sites/884/2026/07/SPD_Wahlprogramm_Langfassung.pdf) / Initiative zur Videoüberwachung an Bahnhöfen) und FDP (Landtagswahlprogramm Niedersachsen) befürworten Kameras an Problemorten. Die Linke lehnt eine Ausweitung der Überwachung aus Gründen des Datenschutzes ab (Themenseite Digitalisierung).
-10. **Mehr Fahrradstraßen:**  
-    Linke ([S. 15](https://die-linke-salzgitter.de/documents/Kommunalwahl_Programm-2026.pdf)), Grüne ([S. 7–8](https://gruene-salzgitter.de/wp-content/uploads/sites/102/2026/07/MACHS-GRUeN.pdf)) und SPD ([S. 8](https://www.spd-salzgitter.de/wp-content/uploads/sites/884/2026/07/SPD_Wahlprogramm_Langfassung.pdf)) fordern den Ausbau des Radwegenetzes und geschützte Fahrradstraßen vor Schulen. Die CDU setzt stärker auf einen flüssigen Autoverkehr und die Pflege bestehender Wege ([S. 9](https://www.cdu-salzgitter.de/image/kopfgrafiken/CDU%20Wahlprogramm%202026.pdf)).
-11. **Kostenlose Sportvereine für Kinder:**  
-    Grüne ([S. 15 & 28](https://gruene-salzgitter.de/wp-content/uploads/sites/102/2026/07/MACHS-GRUeN.pdf)), SPD ([S. 15](https://www.spd-salzgitter.de/wp-content/uploads/sites/884/2026/07/SPD_Wahlprogramm_Langfassung.pdf)) und Linke (Landesprogramm Niedersachsen, Punkt 7.6) wollen Sportangebote und Vereinsmitgliedschaften für junge Menschen möglichst kostenfrei oder stark vergünstigt halten.
-12. **Klimaschutz im Unterricht:**  
-    Die Grünen verknüpfen Umweltprojekte und Bildung direkt im Schulalltag ([S. 13–14](https://gruene-salzgitter.de/wp-content/uploads/sites/102/2026/07/MACHS-GRUeN.pdf)), die Linke setzt ebenfalls auf ökologische Schulprojekte (Landesprogramm Niedersachsen).
-
-**Hinweis zur Einordnung:**  
-Wenn eine Partei zu einer Frage im Programm keine eindeutige Aussage getroffen hat, wurde dies mit `0` (neutral / keine Angabe) bewertet oder aus ihrer bisherigen Linie im Rat der Stadt Salzgitter abgeleitet. Das Ergebnis soll dir einen ersten Überblick geben, ersetzt aber nicht den eigenen Blick in die Programme.
+        **Hinweis:**  
+        Die Positionen der Parteien spiegeln die Parteiprogramme und das Abstimmungsverhalten im Rat der Stadt Salzgitter wider. Das Ergebnis dient als Orientierungshilfe zur politischen Meinungsbildung.
+        """)
 
 
 st.markdown("""
